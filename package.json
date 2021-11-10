@@ -1,0 +1,34 @@
+{
+    "name": "icarus",
+    "displayName": "vscode-icarus",
+    "description": "Language support for Icarus.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "icarus",
+                "aliases": [
+                    "Icarus",
+                    "icarus"
+                ],
+                "extensions": [
+                    ".ic"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "icarus",
+                "scopeName": "source.icarus",
+                "path": "./syntaxes/icarus.tmLanguage"
+            }
+        ]
+    }
+}
